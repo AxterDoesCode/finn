@@ -96,3 +96,5 @@ MANIFEST
 
 # downloaded dep repos
 /deps/
+
+/brevitas_examples/bnn_pynq/data
