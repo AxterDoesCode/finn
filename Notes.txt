@@ -1,0 +1,33 @@
+Connect up the board to this PC using USB-to-Ethernet adapter. Done
+Setup network bridge between two ethernets? is this possible?. Done (USB Ethernet adapter makes this so much easier)
+
+Install Vivado - Done
+Install finn and point ENV variables to Vivado Done
+
+Install cuda-toolkit for Ubuntu so I can train the CNN/QNN faster - Done
+
+Quantize the CNN that Gemini gave me following the QAT guide and the Brevitas guide.
+
+Not sure if you are supposed to be able to SSH from within the docker container or not?
+
+Need to set up GPU within docker container -  Done, Nvidia-Container Toolkit was pretty easy setup
+
+
+Planned experiments?
+
+Use pre-built cnv model and experiment with different levels of binarization on FPGA performance.
+Reimplement Celerity and evaluate compared to the FPGA experiment
+No fucking clue what to do? Experiment with PTQ or the other ONNX optimisation stuff?
+
+To export the trained model to QONNX, need to pip uninstall brevitas and install latest version, for some reason docker pins the version to 0.10.0 which doesn't have the QONNX export function available in the trainer yet.
+
+After I train all of the models for experiment 1 and build the bitstream then I want to fork finn_examples to add these files in so that I can run stats against them.
+also need to fork brevitas and add the configs
+
+Trained CNV_W1A1, bitfiles built
+
+In training CNV_W2A2, need to see if the build works for this since it is also in the integration flow
+
+Trained CNV_W4A4, bitfiles don't wanna build, this was trained with the latest Brevitas version...
+
+In training CNV_W8A8, need to see if the build works.
