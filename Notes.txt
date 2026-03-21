@@ -1,4 +1,5 @@
 Connect up the board to this PC using USB-to-Ethernet adapter. Done
+
 Setup network bridge between two ethernets? is this possible?. Done (USB Ethernet adapter makes this so much easier)
 
 Install Vivado - Done
@@ -31,3 +32,15 @@ In training CNV_W2A2, need to see if the build works for this since it is also i
 Trained CNV_W4A4, bitfiles don't wanna build, this was trained with the latest Brevitas version...
 
 In training CNV_W8A8, need to see if the build works.
+
+Update: I trained the b2w2 model with the Integration test weights, I suppose this won't work for any higher weights
+
+Experiment 1:
+Have some baseline level of binarization with minimal folding, to establish some baseline
+Max out BRAM+LUTs and see performance/power differences
+
+Experiment 2:
+Reimplement something?
+
+Experiment 3:
+No idea
